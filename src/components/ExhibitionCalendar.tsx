@@ -123,12 +123,12 @@ export function ExhibitionCalendar({
     setCurrentMonth(parseDateKey(todayKey));
   }
 
-  async function refreshSnapshot() {
+  async function refreshData() {
     setIsRefreshing(true);
     setRefreshError(null);
 
     try {
-      const response = await fetch("/api/snapshot/refresh", {
+      const response = await fetch("/api/crawl/refresh", {
         method: "POST"
       });
 
@@ -158,11 +158,12 @@ export function ExhibitionCalendar({
           <button
             className="refresh-button"
             disabled={isRefreshing}
-            onClick={refreshSnapshot}
+            onClick={refreshData}
+            title="자료 새로고침"
             type="button"
           >
             <RefreshCw aria-hidden data-spinning={isRefreshing} size={16} />
-            {isRefreshing ? "수집 중" : "자료 새로고침"}
+            {getRefreshButtonLabel(isRefreshing)}
           </button>
           <div className="month-controls" aria-label="달력 이동">
             <button
@@ -455,4 +456,8 @@ function getVenueFilterOptions(exhibitions: ExhibitionWithVenue[]) {
         value: venue.id
       }))
   ];
+}
+
+function getRefreshButtonLabel(isRefreshing: boolean): string {
+  return isRefreshing ? "수집 중" : "자료 새로고침";
 }

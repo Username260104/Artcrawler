@@ -1,23 +1,34 @@
 import { NextResponse } from "next/server";
-import { writeExhibitionSnapshotFromReport } from "@/data/exhibition-snapshot";
 import { runCrawler } from "@/crawlers/run";
+import { hasDatabaseUrl } from "@/lib/prisma";
 
 export const dynamic = "force-dynamic";
 
 export async function POST() {
   try {
+    if (!hasDatabaseUrl()) {
+      return NextResponse.json(
+        {
+          error:
+            "DATABASE_URL이 필요합니다. 배포 환경에서는 Postgres DB를 연결한 뒤 마이그레이션을 실행해야 합니다."
+        },
+        {
+          status: 503
+        }
+      );
+    }
+
     const report = await runCrawler({
-      dryRun: true,
-      logExhibitions: true
+      dryRun: false
     });
-    const snapshot = await writeExhibitionSnapshotFromReport(report);
 
     return NextResponse.json(
       {
         data: {
-          generatedAt: snapshot.generatedAt,
-          exhibitionCount: snapshot.exhibitions.length,
-          summary: snapshot.summary
+          generatedAt: new Date().toISOString(),
+          exhibitionCount: report.summary.parsedCount,
+          mode: "database",
+          summary: report.summary
         }
       },
       {

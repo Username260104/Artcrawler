@@ -12,7 +12,9 @@
     "lint": "eslint .",
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
-    "db:generate": "prisma generate"
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate deploy",
+    "db:seed": "tsx src/crawlers/seed-database.ts"
   },
   "dependencies": {
     "@prisma/adapter-pg": "7.8.0",
