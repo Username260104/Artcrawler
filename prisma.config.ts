@@ -1,5 +1,7 @@
 import { defineConfig } from "prisma/config";
 
+loadDotenvIfAvailable();
+
 export default defineConfig({
   schema: "prisma/schema.prisma",
   migrations: {
@@ -10,3 +12,14 @@ export default defineConfig({
   }
 });
 
+function loadDotenvIfAvailable() {
+  if (typeof process.loadEnvFile !== "function") {
+    return;
+  }
+
+  try {
+    process.loadEnvFile(".env");
+  } catch {
+    // A local .env file is optional in CI and Vercel.
+  }
+}

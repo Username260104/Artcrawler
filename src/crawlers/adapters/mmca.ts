@@ -8,8 +8,8 @@ import { validateParsedExhibitions } from "../shared/validation";
 import type { CrawlAdapter, ParsedExhibition } from "../types";
 
 const venueSlug = "mmca-seoul";
-const sourceUrl = "http://www.mmca.go.kr/main.do";
-const detailBaseUrl = "http://www.mmca.go.kr/exhibitions/exhibitionsDetail.do?exhFlag=1&exhId=";
+const sourceUrl = "https://www.mmca.go.kr/main.do";
+const detailBaseUrl = "https://www.mmca.go.kr/exhibitions/exhibitionsDetail.do?exhFlag=1&exhId=";
 
 export const mmcaAdapter: CrawlAdapter = {
   key: "mmca",

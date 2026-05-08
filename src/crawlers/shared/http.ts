@@ -1,9 +1,10 @@
 export async function fetchHtml(url: string): Promise<string> {
   const response = await fetch(url, {
     headers: {
-      "accept": "text/html,application/xhtml+xml",
+      "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+      "accept-language": "ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7",
       "user-agent":
-        "Artcrawler/0.1 (+https://example.com; exhibition calendar crawler)"
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
     }
   });
 
@@ -22,9 +23,10 @@ export async function postJson<TResponse>(
     body: JSON.stringify(body),
     headers: {
       "accept": "application/json",
+      "accept-language": "ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7",
       "content-type": "application/json",
       "user-agent":
-        "Artcrawler/0.1 (+https://example.com; exhibition calendar crawler)"
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
     },
     method: "POST"
   });
