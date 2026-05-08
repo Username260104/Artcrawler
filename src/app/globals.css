@@ -617,14 +617,19 @@ h3 {
 
 @media (max-width: 720px) {
   .calendar-shell {
-    width: min(100vw - 20px, 1440px);
-    padding-top: 20px;
+    width: min(100vw - 12px, 1440px);
+    padding-top: 14px;
   }
 
   .app-header,
   .header-actions {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .app-header {
+    gap: 12px;
+    padding-bottom: 14px;
   }
 
   .header-actions,
@@ -638,60 +643,217 @@ h3 {
   }
 
   h1 {
-    font-size: 32px;
+    font-size: 30px;
+  }
+
+  .data-status {
+    margin-top: 7px;
+    font-size: 13px;
   }
 
   .coverage-strip {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    margin-top: 12px;
   }
 
-  .filter-row,
+  .coverage-strip div {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    min-width: 0;
+    gap: 4px;
+    padding: 8px 3px;
+  }
+
+  .coverage-strip strong {
+    flex: 0 0 auto;
+    font-size: 17px;
+  }
+
+  .coverage-strip span {
+    min-width: 0;
+    overflow: hidden;
+    font-size: 10px;
+    line-height: 1;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .filter-row {
+    display: grid;
+    gap: 8px;
+    margin: 12px 0;
+  }
+
   .segmented-group,
   .select-filter {
-    align-items: stretch;
-    flex-direction: column;
+    align-items: center;
+    flex-direction: row;
+    min-width: 0;
+  }
+
+  .segmented-label,
+  .select-filter span {
+    flex: 0 0 42px;
+    font-size: 12px;
+  }
+
+  .segmented-control {
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(0, 1fr);
+    width: 100%;
+    min-width: 0;
+    border-radius: 999px;
+  }
+
+  .segmented-control button {
+    min-width: 0;
+    min-height: 30px;
+    border-radius: 999px;
+    padding: 0 6px;
+    font-size: 12px;
   }
 
   .select-filter select {
     width: 100%;
-    border-radius: 8px;
-  }
-
-  .segmented-control {
-    grid-auto-flow: row;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    border-radius: 8px;
-  }
-
-  .segmented-control button {
-    border-radius: 6px;
+    min-width: 0;
+    min-height: 34px;
+    border-radius: 999px;
+    padding-left: 12px;
+    font-size: 12px;
   }
 
   .calendar-heading {
-    align-items: flex-start;
-    flex-direction: column;
+    padding: 12px;
+  }
+
+  .calendar-kicker {
+    display: none;
+  }
+
+  .calendar-heading h2 {
+    font-size: 20px;
+  }
+
+  .month-count {
+    gap: 5px;
+    padding: 6px 9px;
+    font-size: 12px;
   }
 
   .weekday-grid {
-    display: none;
+    display: grid;
+  }
+
+  .weekday-grid div {
+    padding: 7px 2px;
+    font-size: 11px;
   }
 
   .month-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 8px;
-    background: transparent;
-    padding: 10px;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 1px;
+    background: var(--line);
+    padding: 0;
   }
 
   .day-cell {
-    min-height: 92px;
-    border: 1px solid var(--line);
-    border-radius: 8px;
+    gap: 4px;
+    min-height: 58px;
+    border: 0;
+    border-radius: 0;
+    padding: 5px 4px;
+  }
+
+  .day-number {
+    width: 22px;
+    height: 22px;
+    font-size: 11px;
+  }
+
+  .day-events {
+    gap: 2px;
+  }
+
+  .event-chip,
+  .more-chip {
+    min-height: 5px;
+    border-radius: 999px;
+    padding: 0;
+    font-size: 0;
+    line-height: 1;
+  }
+
+  .event-venue,
+  .event-title {
+    display: none;
+  }
+
+  .more-chip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 13px;
+    font-size: 9px;
+    font-weight: 800;
   }
 
   .day-cell[data-current-month="false"] {
-    display: none;
+    display: grid;
+  }
+
+  .day-panel {
+    padding: 14px;
+  }
+
+  .day-panel-header {
+    display: block;
+  }
+
+  .day-panel-header h2 {
+    font-size: 20px;
+  }
+
+  .selected-count {
+    margin: 10px 0;
+  }
+
+  .selected-card h3 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 390px) {
+  .coverage-strip {
+    border-radius: 6px;
+  }
+
+  .coverage-strip div {
+    padding-inline: 2px;
+  }
+
+  .coverage-strip strong {
+    font-size: 15px;
+  }
+
+  .coverage-strip span {
+    font-size: 9px;
+  }
+
+  .segmented-control button {
+    padding-inline: 4px;
+    font-size: 11px;
+  }
+
+  .day-cell {
+    min-height: 52px;
+    padding-inline: 3px;
+  }
+
+  .day-number {
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
   }
 }
 
