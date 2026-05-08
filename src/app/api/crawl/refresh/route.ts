@@ -3,6 +3,7 @@ import { runCrawler } from "@/crawlers/run";
 import { hasDatabaseUrl } from "@/lib/prisma";
 
 export const dynamic = "force-dynamic";
+export const maxDuration = 60;
 
 export async function POST() {
   try {
