@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "prisma generate && next build",
     "crawl": "tsx src/crawlers/run-crawler.ts",
     "crawl:dry": "tsx src/crawlers/run-crawler.ts --dry-run",
     "crawl:snapshot": "tsx src/crawlers/write-snapshot.ts",
