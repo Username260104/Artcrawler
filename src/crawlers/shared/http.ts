@@ -1,10 +1,8 @@
 export async function fetchHtml(url: string): Promise<string> {
-  const response = await fetch(url, {
+  const response = await fetchWithContext(url, {
     headers: {
-      "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-      "accept-language": "ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7",
-      "user-agent":
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+      ...browserLikeHeaders,
+      "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
     }
   });
 
@@ -19,14 +17,38 @@ export async function postJson<TResponse>(
   url: string,
   body: Record<string, unknown>
 ): Promise<TResponse> {
-  const response = await fetch(url, {
+  const response = await fetchWithContext(url, {
     body: JSON.stringify(body),
     headers: {
+      ...browserLikeHeaders,
       "accept": "application/json",
-      "accept-language": "ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7",
-      "content-type": "application/json",
-      "user-agent":
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+      "content-type": "application/json"
+    },
+    method: "POST"
+  });
+
+  if (!response.ok) {
+    throw new Error(`Failed to fetch ${url}: ${response.status} ${response.statusText}`);
+  }
+
+  return response.json() as Promise<TResponse>;
+}
+
+export async function postFormJson<TResponse>(
+  url: string,
+  body: Record<string, string>,
+  options: {
+    referer?: string;
+  } = {}
+): Promise<TResponse> {
+  const response = await fetchWithContext(url, {
+    body: new URLSearchParams(body).toString(),
+    headers: {
+      ...browserLikeHeaders,
+      "accept": "application/json, text/javascript, */*; q=0.01",
+      "content-type": "application/x-www-form-urlencoded;charset=UTF-8",
+      ...(options.referer ? { "referer": options.referer } : {}),
+      "x-requested-with": "XMLHttpRequest"
     },
     method: "POST"
   });
@@ -47,5 +69,21 @@ export function toAbsoluteUrl(baseUrl: string, href: string | undefined): string
     return new URL(href, baseUrl).toString();
   } catch {
     return undefined;
+  }
+}
+
+const browserLikeHeaders = {
+  "accept-language": "ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7",
+  "user-agent":
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+};
+
+async function fetchWithContext(url: string, init: RequestInit): Promise<Response> {
+  try {
+    return await fetch(url, init);
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error);
+
+    throw new Error(`Failed to fetch ${url}: ${message}`);
   }
 }
