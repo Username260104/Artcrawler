@@ -1,0 +1,91 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum VenueType {
+  museum
+  gallery
+  nonprofit
+}
+
+enum AuthorityTier {
+  A
+  B
+  C
+  D
+}
+
+enum ExhibitionStatus {
+  upcoming
+  ongoing
+  endingSoon
+  ended
+}
+
+enum CrawlRunStatus {
+  success
+  partial
+  failed
+}
+
+model Venue {
+  id             String       @id @default(cuid())
+  name           String
+  slug           String       @unique
+  type           VenueType
+  authorityTier  AuthorityTier
+  district       String?
+  officialUrl    String
+  exhibitionUrl  String
+  crawlerKey     String?
+  crawlerEnabled Boolean      @default(false)
+  createdAt      DateTime     @default(now())
+  updatedAt      DateTime     @updatedAt
+
+  exhibitions Exhibition[]
+  crawlRuns   CrawlRun[]
+}
+
+model Exhibition {
+  id          String           @id @default(cuid())
+  venueId     String
+  title       String
+  artists     String[]
+  startDate   DateTime
+  endDate     DateTime
+  status      ExhibitionStatus
+  sourceUrl   String
+  imageUrl    String?
+  confidence  Float            @default(1)
+  sourceHash  String           @unique
+  firstSeenAt DateTime         @default(now())
+  lastSeenAt  DateTime         @default(now())
+  createdAt   DateTime         @default(now())
+  updatedAt   DateTime         @updatedAt
+
+  venue Venue @relation(fields: [venueId], references: [id], onDelete: Cascade)
+
+  @@index([venueId])
+  @@index([startDate, endDate])
+  @@index([status])
+}
+
+model CrawlRun {
+  id           String         @id @default(cuid())
+  venueId      String
+  status       CrawlRunStatus
+  fetchedCount Int            @default(0)
+  parsedCount  Int            @default(0)
+  errorMessage String?
+  startedAt    DateTime       @default(now())
+  finishedAt   DateTime?
+
+  venue Venue @relation(fields: [venueId], references: [id], onDelete: Cascade)
+
+  @@index([venueId])
+  @@index([startedAt])
+}

@@ -1,0 +1,623 @@
+{
+  "generatedAt": "2026-05-08T11:07:57.908Z",
+  "summary": {
+    "adapters": 10,
+    "success": 9,
+    "partial": 1,
+    "failed": 0,
+    "parsedCount": 21
+  },
+  "exhibitions": [
+    {
+      "id": "snapshot-9177ab285853163a0acc7e03f6a1a1d741b498aea39c0a47cf78adeaa7b3b09b",
+      "venueId": "venue-sema",
+      "title": "유휴공간 전시 《지구울림 - 헤르츠앤도우》",
+      "artists": [
+        "지구울림 - 헤르츠앤도우"
+      ],
+      "startDate": "2025-09-02",
+      "endDate": "2026-05-31",
+      "status": "ongoing",
+      "sourceUrl": "https://sema.seoul.go.kr/kr/whatson/exhibition/detail?exNo=1436378",
+      "imageUrl": "https://sema.seoul.go.kr/common/imgFileView?thumbYn=N&FILE_ID=978635",
+      "confidence": 0.92,
+      "sourceHash": "9177ab285853163a0acc7e03f6a1a1d741b498aea39c0a47cf78adeaa7b3b09b",
+      "firstSeenAt": "2026-05-08T11:07:57.908Z",
+      "lastSeenAt": "2026-05-08T11:07:57.908Z",
+      "venue": {
+        "id": "venue-sema",
+        "name": "서울시립미술관",
+        "slug": "sema",
+        "type": "museum",
+        "authorityTier": "A",
+        "district": "중구",
+        "officialUrl": "https://sema.seoul.go.kr",
+        "exhibitionUrl": "https://sema.seoul.go.kr",
+        "crawlerKey": "sema",
+        "crawlerEnabled": true
+      }
+    },
+    {
+      "id": "snapshot-d1d2dfff0ece87442f89c43f37313ae1246f90e7921d0f7fd93074e781364697",
+      "venueId": "venue-leeum",
+      "title": "티노 세갈",
+      "artists": [
+        "티노 세갈"
+      ],
+      "startDate": "2026-03-03",
+      "endDate": "2026-06-28",
+      "status": "ongoing",
+      "sourceUrl": "https://www.leeumhoam.org/leeum/exhibition/92",
+      "imageUrl": "https://www.leeumhoam.org/upload/banner/1770858740102_TS-Main%20Banner-Desktop.jpg",
+      "confidence": 0.92,
+      "sourceHash": "d1d2dfff0ece87442f89c43f37313ae1246f90e7921d0f7fd93074e781364697",
+      "firstSeenAt": "2026-05-08T11:07:57.908Z",
+      "lastSeenAt": "2026-05-08T11:07:57.908Z",
+      "venue": {
+        "id": "venue-leeum",
+        "name": "리움미술관",
+        "slug": "leeum",
+        "type": "museum",
+        "authorityTier": "A",
+        "district": "용산",
+        "officialUrl": "https://www.leeumhoam.org",
+        "exhibitionUrl": "https://www.leeumhoam.org/leeum",
+        "crawlerKey": "leeum",
+        "crawlerEnabled": true
+      }
+    },
+    {
+      "id": "snapshot-687a15f74771a39d9b1cd5c8822a32b8aeced4acb787163aceffd3e8337d8e2d",
+      "venueId": "venue-sema",
+      "title": "SeMA 프로젝트V_얄루",
+      "artists": [
+        "SeMA 프로젝트V_얄루"
+      ],
+      "startDate": "2026-03-12",
+      "endDate": "2026-07-26",
+      "status": "ongoing",
+      "sourceUrl": "https://sema.seoul.go.kr/kr/whatson/exhibition/detail?exNo=1498110",
+      "imageUrl": "https://sema.seoul.go.kr/common/imgFileView?thumbYn=N&FILE_ID=1005116",
+      "confidence": 0.92,
+      "sourceHash": "687a15f74771a39d9b1cd5c8822a32b8aeced4acb787163aceffd3e8337d8e2d",
+      "firstSeenAt": "2026-05-08T11:07:57.908Z",
+      "lastSeenAt": "2026-05-08T11:07:57.908Z",
+      "venue": {
+        "id": "venue-sema",
+        "name": "서울시립미술관",
+        "slug": "sema",
+        "type": "museum",
+        "authorityTier": "A",
+        "district": "중구",
+        "officialUrl": "https://sema.seoul.go.kr",
+        "exhibitionUrl": "https://sema.seoul.go.kr",
+        "crawlerKey": "sema",
+        "crawlerEnabled": true
+      }
+    },
+    {
+      "id": "snapshot-38a95fa1345413ade8dc76d3628cefd1199d3ab1ffcd3fc873b31c6aa2bbc34c",
+      "venueId": "venue-kukje",
+      "title": "Chora",
+      "artists": [
+        "Lotus L. Kang"
+      ],
+      "startDate": "2026-03-19",
+      "endDate": "2026-05-10",
+      "status": "endingSoon",
+      "sourceUrl": "https://www.kukjegallery.com/exhibitions/view?seq=291",
+      "imageUrl": "https://www.kukjegallery.com/upload/exhibitions/d0017539327627fb7bb68928153affe3_thumb_2000x1000.jpg",
+      "confidence": 0.92,
+      "sourceHash": "38a95fa1345413ade8dc76d3628cefd1199d3ab1ffcd3fc873b31c6aa2bbc34c",
+      "firstSeenAt": "2026-05-08T11:07:57.908Z",
+      "lastSeenAt": "2026-05-08T11:07:57.908Z",
+      "venue": {
+        "id": "venue-kukje",
+        "name": "국제갤러리",
+        "slug": "kukje",
+        "type": "gallery",
+        "authorityTier": "A",
+        "district": "종로",
+        "officialUrl": "https://www.kukjegallery.com",
+        "exhibitionUrl": "https://www.kukjegallery.com/exhibitions",
+        "crawlerKey": "kukje",
+        "crawlerEnabled": true
+      }
+    },
+    {
+      "id": "snapshot-c2e2ccbf2112b4cfe52cedcb4b03cc7c61f5a8119a83cc1397bceda8724f994b",
+      "venueId": "venue-kukje",
+      "title": "Zen Master Eyeball",
+      "artists": [
+        "Park Chan-kyong"
+      ],
+      "startDate": "2026-03-19",
+      "endDate": "2026-05-10",
+      "status": "endingSoon",
+      "sourceUrl": "https://www.kukjegallery.com/exhibitions/view?seq=290",
+      "imageUrl": "https://www.kukjegallery.com/upload/exhibitions/e052cde225d243422355f0014a62560c_thumb_2000x1000.jpg",
+      "confidence": 0.92,
+      "sourceHash": "c2e2ccbf2112b4cfe52cedcb4b03cc7c61f5a8119a83cc1397bceda8724f994b",
+      "firstSeenAt": "2026-05-08T11:07:57.908Z",
+      "lastSeenAt": "2026-05-08T11:07:57.908Z",
+      "venue": {
+        "id": "venue-kukje",
+        "name": "국제갤러리",
+        "slug": "kukje",
+        "type": "gallery",
+        "authorityTier": "A",
+        "district": "종로",
+        "officialUrl": "https://www.kukjegallery.com",
+        "exhibitionUrl": "https://www.kukjegallery.com/exhibitions",
+        "crawlerKey": "kukje",
+        "crawlerEnabled": true
+      }
+    },
+    {
+      "id": "snapshot-32c111a2b55b09ffac9db45ae5fcf3cbd0814af71ec70e52467956cf99e61ef8",
+      "venueId": "venue-art-sonje",
+      "title": "스펙트로신테시스 서울",
+      "artists": [
+        "구자혜",
+        "길버트 & 조지(Gilbert & George)",
+        "김경렴",
+        "외 71명"
+      ],
+      "startDate": "2026-03-20",
+      "endDate": "2026-06-28",
+      "status": "ongoing",
+      "sourceUrl": "https://artsonje.org/exhibition/%ec%8a%a4%ed%8e%99%ed%8a%b8%eb%a1%9c%ec%8b%a0%ed%85%8c%ec%8b%9c%ec%8a%a4-%ec%84%9c%ec%9a%b8/",
+      "imageUrl": "https://artsonje.org/wp-content/uploads/2026/02/Spectrosynthesis_IGposting_1080x1080.jpg",
+      "confidence": 0.95,
+      "sourceHash": "32c111a2b55b09ffac9db45ae5fcf3cbd0814af71ec70e52467956cf99e61ef8",
+      "firstSeenAt": "2026-05-08T11:07:57.908Z",
+      "lastSeenAt": "2026-05-08T11:07:57.908Z",
+      "venue": {
+        "id": "venue-art-sonje",
+        "name": "아트선재센터",
+        "slug": "art-sonje",
+        "type": "nonprofit",
+        "authorityTier": "A",
+        "district": "종로",
+        "officialUrl": "https://artsonje.org",
+        "exhibitionUrl": "https://artsonje.org/exhibition",
+        "crawlerKey": "art-sonje",
+        "crawlerEnabled": true
+      }
+    },
+    {
+      "id": "snapshot-6d9be7e3bb2c97b1fb8fca97291c7c6a3c6d5c4ddb45cc9378290d83a5ed6c2e",
+      "venueId": "venue-sema",
+      "title": "알렉사에게",
+      "artists": [
+        "알렉사에게"
+      ],
+      "startDate": "2026-03-26",
+      "endDate": "2026-07-26",
+      "status": "ongoing",
+      "sourceUrl": "https://sema.seoul.go.kr/kr/whatson/exhibition/detail?exNo=1513028",
+      "imageUrl": "https://sema.seoul.go.kr/common/imgFileView?thumbYn=N&FILE_ID=1005095",
+      "confidence": 0.92,
+      "sourceHash": "6d9be7e3bb2c97b1fb8fca97291c7c6a3c6d5c4ddb45cc9378290d83a5ed6c2e",
+      "firstSeenAt": "2026-05-08T11:07:57.908Z",
+      "lastSeenAt": "2026-05-08T11:07:57.908Z",
+      "venue": {
+        "id": "venue-sema",
+        "name": "서울시립미술관",
+        "slug": "sema",
+        "type": "museum",
+        "authorityTier": "A",
+        "district": "중구",
+        "officialUrl": "https://sema.seoul.go.kr",
+        "exhibitionUrl": "https://sema.seoul.go.kr",
+        "crawlerKey": "sema",
+        "crawlerEnabled": true
+      }
+    },
+    {
+      "id": "snapshot-cb2836e0971871a498cc644f13bdc37ae31fbfda0b81a1b49b0d64e104991b4b",
+      "venueId": "venue-mmca-seoul",
+      "title": "데이미언 허스트와 YBA",
+      "artists": [
+        "데이미언 허스트와 YBA"
+      ],
+      "startDate": "2026-04-01",
+      "endDate": "2026-06-06",
+      "status": "ongoing",
+      "sourceUrl": "http://www.mmca.go.kr/exhibitions/exhibitionsDetail.do?exhFlag=1&exhId=202601060002025",
+      "imageUrl": "http://www.mmca.go.kr/upload/exhibition/2026/03/2026033009492612313790.png",
+      "confidence": 0.93,
+      "sourceHash": "cb2836e0971871a498cc644f13bdc37ae31fbfda0b81a1b49b0d64e104991b4b",
+      "firstSeenAt": "2026-05-08T11:07:57.908Z",
+      "lastSeenAt": "2026-05-08T11:07:57.908Z",
+      "venue": {
+        "id": "venue-mmca-seoul",
+        "name": "국립현대미술관 서울",
+        "slug": "mmca-seoul",
+        "type": "museum",
+        "authorityTier": "A",
+        "district": "종로",
+        "officialUrl": "https://www.mmca.go.kr",
+        "exhibitionUrl": "https://www.mmca.go.kr/main.do",
+        "crawlerKey": "mmca",
+        "crawlerEnabled": true
+      }
+    },
+    {
+      "id": "snapshot-d97551d0690afab35ceccf628db340212c74c920d8e49f6cec35c5c849b3e396",
+      "venueId": "venue-sema",
+      "title": "유휴공간 프로젝트 전시 《몸을 위한 간주곡 ― 소목장세미》",
+      "artists": [
+        "몸을 위한 간주곡 ― 소목장세미"
+      ],
+      "startDate": "2026-04-02",
+      "endDate": "2027-05-30",
+      "status": "ongoing",
+      "sourceUrl": "https://sema.seoul.go.kr/kr/whatson/exhibition/detail?exNo=1512457",
+      "imageUrl": "https://sema.seoul.go.kr/common/imgFileView?thumbYn=N&FILE_ID=1009414",
+      "confidence": 0.92,
+      "sourceHash": "d97551d0690afab35ceccf628db340212c74c920d8e49f6cec35c5c849b3e396",
+      "firstSeenAt": "2026-05-08T11:07:57.908Z",
+      "lastSeenAt": "2026-05-08T11:07:57.908Z",
+      "venue": {
+        "id": "venue-sema",
+        "name": "서울시립미술관",
+        "slug": "sema",
+        "type": "museum",
+        "authorityTier": "A",
+        "district": "중구",
+        "officialUrl": "https://sema.seoul.go.kr",
+        "exhibitionUrl": "https://sema.seoul.go.kr",
+        "crawlerKey": "sema",
+        "crawlerEnabled": true
+      }
+    },
+    {
+      "id": "snapshot-768ea860c16624755549430bcfa855ceb5af442cad9cb9db49c3c7db5b4b8432",
+      "venueId": "venue-sema",
+      "title": "2026 서울사진축제 《컴백홈》",
+      "artists": [
+        "컴백홈"
+      ],
+      "startDate": "2026-04-09",
+      "endDate": "2026-06-14",
+      "status": "ongoing",
+      "sourceUrl": "https://sema.seoul.go.kr/kr/whatson/exhibition/detail?exNo=1515171",
+      "imageUrl": "https://sema.seoul.go.kr/common/imgFileView?thumbYn=N&FILE_ID=1006299",
+      "confidence": 0.92,
+      "sourceHash": "768ea860c16624755549430bcfa855ceb5af442cad9cb9db49c3c7db5b4b8432",
+      "firstSeenAt": "2026-05-08T11:07:57.908Z",
+      "lastSeenAt": "2026-05-08T11:07:57.908Z",
+      "venue": {
+        "id": "venue-sema",
+        "name": "서울시립미술관",
+        "slug": "sema",
+        "type": "museum",
+        "authorityTier": "A",
+        "district": "중구",
+        "officialUrl": "https://sema.seoul.go.kr",
+        "exhibitionUrl": "https://sema.seoul.go.kr",
+        "crawlerKey": "sema",
+        "crawlerEnabled": true
+      }
+    },
+    {
+      "id": "snapshot-a7bb669e3c4e672932e779f68274ff8003420c886faa0f9f926ab011530f41ed",
+      "venueId": "venue-pkm",
+      "title": "Unseen/Thing",
+      "artists": [
+        "Jungjin Lee"
+      ],
+      "startDate": "2026-04-15",
+      "endDate": "2026-05-23",
+      "status": "ongoing",
+      "sourceUrl": "https://www.pkmgallery.com/exhibitions/jungjin-lee2",
+      "imageUrl": "https://s3.amazonaws.com/files.collageplatform.com.prod/application/5d5eccf1a5aa2ced538b4567/ebae87ca3fe22e1564e91c5cccde5a26.png",
+      "confidence": 0.96,
+      "sourceHash": "a7bb669e3c4e672932e779f68274ff8003420c886faa0f9f926ab011530f41ed",
+      "firstSeenAt": "2026-05-08T11:07:57.908Z",
+      "lastSeenAt": "2026-05-08T11:07:57.908Z",
+      "venue": {
+        "id": "venue-pkm",
+        "name": "PKM 갤러리",
+        "slug": "pkm",
+        "type": "gallery",
+        "authorityTier": "A",
+        "district": "종로",
+        "officialUrl": "https://www.pkmgallery.com",
+        "exhibitionUrl": "https://www.pkmgallery.com/exhibitions",
+        "crawlerKey": "pkm",
+        "crawlerEnabled": true
+      }
+    },
+    {
+      "id": "snapshot-58677dc492347b907af9bd7229b6cc240e43dbb806816c49dd3ee949360c4037",
+      "venueId": "venue-pace-seoul",
+      "title": "Primary Light",
+      "artists": [
+        "Mary Corse"
+      ],
+      "startDate": "2026-04-15",
+      "endDate": "2026-06-05",
+      "status": "ongoing",
+      "sourceUrl": "https://www.pacegallery.com/exhibitions/mary-corse-primary-light/",
+      "imageUrl": "https://www.pacegallery.com/media/images/_L5A0971.width-2000.webp",
+      "confidence": 0.98,
+      "sourceHash": "58677dc492347b907af9bd7229b6cc240e43dbb806816c49dd3ee949360c4037",
+      "firstSeenAt": "2026-05-08T11:07:57.908Z",
+      "lastSeenAt": "2026-05-08T11:07:57.908Z",
+      "venue": {
+        "id": "venue-pace-seoul",
+        "name": "Pace Seoul",
+        "slug": "pace-seoul",
+        "type": "gallery",
+        "authorityTier": "A",
+        "district": "용산",
+        "officialUrl": "https://www.pacegallery.com",
+        "exhibitionUrl": "https://www.pacegallery.com/galleries/seoul",
+        "crawlerKey": "pace",
+        "crawlerEnabled": true
+      }
+    },
+    {
+      "id": "snapshot-937258a588dab5354c64a53da0892392af317823c8b22d63028345bbabbd7d2d",
+      "venueId": "venue-pace-seoul",
+      "title": "Particulates of Color",
+      "artists": [
+        "Peter Alexander"
+      ],
+      "startDate": "2026-04-16",
+      "endDate": "2026-06-05",
+      "status": "ongoing",
+      "sourceUrl": "https://www.pacegallery.com/exhibitions/peter-alexander-particulates-of-color/",
+      "imageUrl": "https://www.pacegallery.com/media/images/_L5A1362_VPZ0HNZ.width-2000.webp",
+      "confidence": 0.98,
+      "sourceHash": "937258a588dab5354c64a53da0892392af317823c8b22d63028345bbabbd7d2d",
+      "firstSeenAt": "2026-05-08T11:07:57.908Z",
+      "lastSeenAt": "2026-05-08T11:07:57.908Z",
+      "venue": {
+        "id": "venue-pace-seoul",
+        "name": "Pace Seoul",
+        "slug": "pace-seoul",
+        "type": "gallery",
+        "authorityTier": "A",
+        "district": "용산",
+        "officialUrl": "https://www.pacegallery.com",
+        "exhibitionUrl": "https://www.pacegallery.com/galleries/seoul",
+        "crawlerKey": "pace",
+        "crawlerEnabled": true
+      }
+    },
+    {
+      "id": "snapshot-d5017d9c4b5335795d4e0d810bd3a6c8424742d8cb05359dd80033de988ee891",
+      "venueId": "venue-sema",
+      "title": "가나아트컬렉션 《기술의 저변: 경계에 선 장면들》",
+      "artists": [
+        "기술의 저변: 경계에 선 장면들"
+      ],
+      "startDate": "2026-04-16",
+      "endDate": "2026-11-22",
+      "status": "ongoing",
+      "sourceUrl": "https://sema.seoul.go.kr/kr/whatson/exhibition/detail?exNo=1509709",
+      "imageUrl": "https://sema.seoul.go.kr/common/imgFileView?thumbYn=N&FILE_ID=1008371",
+      "confidence": 0.92,
+      "sourceHash": "d5017d9c4b5335795d4e0d810bd3a6c8424742d8cb05359dd80033de988ee891",
+      "firstSeenAt": "2026-05-08T11:07:57.908Z",
+      "lastSeenAt": "2026-05-08T11:07:57.908Z",
+      "venue": {
+        "id": "venue-sema",
+        "name": "서울시립미술관",
+        "slug": "sema",
+        "type": "museum",
+        "authorityTier": "A",
+        "district": "중구",
+        "officialUrl": "https://sema.seoul.go.kr",
+        "exhibitionUrl": "https://sema.seoul.go.kr",
+        "crawlerKey": "sema",
+        "crawlerEnabled": true
+      }
+    },
+    {
+      "id": "snapshot-5e0495a7242d22858901c17e6fc8fd9aab34206abee59af9615ad0d424eea9b0",
+      "venueId": "venue-mmca-seoul",
+      "title": "그래도 해보던 날들",
+      "artists": [
+        "그래도 해보던 날들"
+      ],
+      "startDate": "2026-04-17",
+      "endDate": "2026-08-30",
+      "status": "ongoing",
+      "sourceUrl": "http://www.mmca.go.kr/exhibitions/exhibitionsDetail.do?exhFlag=1&exhId=202603300002070",
+      "imageUrl": "http://www.mmca.go.kr/upload/exhibition/2026/04/2026040803310161019462.gif",
+      "confidence": 0.93,
+      "sourceHash": "5e0495a7242d22858901c17e6fc8fd9aab34206abee59af9615ad0d424eea9b0",
+      "firstSeenAt": "2026-05-08T11:07:57.908Z",
+      "lastSeenAt": "2026-05-08T11:07:57.908Z",
+      "venue": {
+        "id": "venue-mmca-seoul",
+        "name": "국립현대미술관 서울",
+        "slug": "mmca-seoul",
+        "type": "museum",
+        "authorityTier": "A",
+        "district": "종로",
+        "officialUrl": "https://www.mmca.go.kr",
+        "exhibitionUrl": "https://www.mmca.go.kr/main.do",
+        "crawlerKey": "mmca",
+        "crawlerEnabled": true
+      }
+    },
+    {
+      "id": "snapshot-edcdd26b71075acacf17242564f2d1c87803ff605ad2eee87c8ecc0e3a24a9a4",
+      "venueId": "venue-sema",
+      "title": "《글짓, 쓰는 예술》",
+      "artists": [
+        "글짓, 쓰는 예술"
+      ],
+      "startDate": "2026-04-23",
+      "endDate": "2026-07-12",
+      "status": "ongoing",
+      "sourceUrl": "https://sema.seoul.go.kr/kr/whatson/exhibition/detail?exNo=1521429",
+      "imageUrl": "https://sema.seoul.go.kr/common/imgFileView?thumbYn=N&FILE_ID=1008420",
+      "confidence": 0.92,
+      "sourceHash": "edcdd26b71075acacf17242564f2d1c87803ff605ad2eee87c8ecc0e3a24a9a4",
+      "firstSeenAt": "2026-05-08T11:07:57.908Z",
+      "lastSeenAt": "2026-05-08T11:07:57.908Z",
+      "venue": {
+        "id": "venue-sema",
+        "name": "서울시립미술관",
+        "slug": "sema",
+        "type": "museum",
+        "authorityTier": "A",
+        "district": "중구",
+        "officialUrl": "https://sema.seoul.go.kr",
+        "exhibitionUrl": "https://sema.seoul.go.kr",
+        "crawlerKey": "sema",
+        "crawlerEnabled": true
+      }
+    },
+    {
+      "id": "snapshot-fbbd0f6442bc25baa9bd1d1a9d545044eb9af7c82cf82370b57bcb7ce2ee2128",
+      "venueId": "venue-sema",
+      "title": "난지미술창작스튜디오 20주년 기념전 《사랑의 기원》",
+      "artists": [
+        "사랑의 기원"
+      ],
+      "startDate": "2026-04-30",
+      "endDate": "2026-09-06",
+      "status": "ongoing",
+      "sourceUrl": "https://sema.seoul.go.kr/kr/whatson/exhibition/detail?exNo=1523485",
+      "imageUrl": "https://sema.seoul.go.kr/common/imgFileView?thumbYn=N&FILE_ID=1009407",
+      "confidence": 0.92,
+      "sourceHash": "fbbd0f6442bc25baa9bd1d1a9d545044eb9af7c82cf82370b57bcb7ce2ee2128",
+      "firstSeenAt": "2026-05-08T11:07:57.908Z",
+      "lastSeenAt": "2026-05-08T11:07:57.908Z",
+      "venue": {
+        "id": "venue-sema",
+        "name": "서울시립미술관",
+        "slug": "sema",
+        "type": "museum",
+        "authorityTier": "A",
+        "district": "중구",
+        "officialUrl": "https://sema.seoul.go.kr",
+        "exhibitionUrl": "https://sema.seoul.go.kr",
+        "crawlerKey": "sema",
+        "crawlerEnabled": true
+      }
+    },
+    {
+      "id": "snapshot-35c1c5870dd20d6e813f9dee45a05d3e7df662979fa878a6f05b82d5a8760ec1",
+      "venueId": "venue-white-cube-seoul",
+      "title": "Duett",
+      "artists": [
+        "Takis",
+        "Nam June Paik"
+      ],
+      "startDate": "2026-05-02",
+      "endDate": "2026-06-05",
+      "status": "ongoing",
+      "sourceUrl": "https://www.whitecube.com/gallery-exhibitions/takis-and-nam-june-paik-seoul-2026",
+      "confidence": 0.9,
+      "sourceHash": "35c1c5870dd20d6e813f9dee45a05d3e7df662979fa878a6f05b82d5a8760ec1",
+      "firstSeenAt": "2026-05-08T11:07:57.908Z",
+      "lastSeenAt": "2026-05-08T11:07:57.908Z",
+      "venue": {
+        "id": "venue-white-cube-seoul",
+        "name": "White Cube Seoul",
+        "slug": "white-cube-seoul",
+        "type": "gallery",
+        "authorityTier": "A",
+        "district": "강남",
+        "officialUrl": "https://www.whitecube.com",
+        "exhibitionUrl": "https://www.whitecube.com/locations/white-cube-seoul",
+        "crawlerKey": "white-cube",
+        "crawlerEnabled": true
+      }
+    },
+    {
+      "id": "snapshot-906db51d417aeba93fa2d719647c1f85c387f389db87b46e3da7b6dbb17b62d6",
+      "venueId": "venue-leeum",
+      "title": "다른 공간 안으로: 여성 작가들의 공감각적 환경 1956-1976",
+      "artists": [
+        "다른 공간 안으로"
+      ],
+      "startDate": "2026-05-05",
+      "endDate": "2026-11-29",
+      "status": "ongoing",
+      "sourceUrl": "https://www.leeumhoam.org/leeum/exhibition/93",
+      "imageUrl": "https://www.leeumhoam.org/upload/banner/1776665746360_2_IOS_%EC%A0%84%EC%8B%9C%ED%8E%98%EC%9D%B4%EC%A7%80_%EC%9B%B9%EB%B0%B0%EB%84%88_1920x1080_A.jpg",
+      "confidence": 0.92,
+      "sourceHash": "906db51d417aeba93fa2d719647c1f85c387f389db87b46e3da7b6dbb17b62d6",
+      "firstSeenAt": "2026-05-08T11:07:57.908Z",
+      "lastSeenAt": "2026-05-08T11:07:57.908Z",
+      "venue": {
+        "id": "venue-leeum",
+        "name": "리움미술관",
+        "slug": "leeum",
+        "type": "museum",
+        "authorityTier": "A",
+        "district": "용산",
+        "officialUrl": "https://www.leeumhoam.org",
+        "exhibitionUrl": "https://www.leeumhoam.org/leeum",
+        "crawlerKey": "leeum",
+        "crawlerEnabled": true
+      }
+    },
+    {
+      "id": "snapshot-1ae8942806fccce80401e346867699122f7b7997cd0616d1a274c64c3f435c50",
+      "venueId": "venue-gallery-hyundai",
+      "title": "김명희: 깊은 시간",
+      "artists": [
+        "김명희"
+      ],
+      "startDate": "2026-05-07",
+      "endDate": "2026-06-14",
+      "status": "ongoing",
+      "sourceUrl": "https://www.galleryhyundai.com/exhibition/view/20000000014",
+      "imageUrl": "https://www.galleryhyundai.com/2026/04/24/16/17/21/a6df35ea-974f-4a34-908a-e432c433c759.crop_middle.jpg",
+      "confidence": 0.97,
+      "sourceHash": "1ae8942806fccce80401e346867699122f7b7997cd0616d1a274c64c3f435c50",
+      "firstSeenAt": "2026-05-08T11:07:57.908Z",
+      "lastSeenAt": "2026-05-08T11:07:57.908Z",
+      "venue": {
+        "id": "venue-gallery-hyundai",
+        "name": "갤러리현대",
+        "slug": "gallery-hyundai",
+        "type": "gallery",
+        "authorityTier": "A",
+        "district": "종로",
+        "officialUrl": "https://www.galleryhyundai.com",
+        "exhibitionUrl": "https://www.galleryhyundai.com/exhibition/onview",
+        "crawlerKey": "gallery-hyundai",
+        "crawlerEnabled": true
+      }
+    },
+    {
+      "id": "snapshot-ed89bacd7b95798d3fe67884b0a88e2c349be86da95152e62a51bf825d174893",
+      "venueId": "venue-white-cube-seoul",
+      "title": "Yoko Matsumoto Gazed at by Nature",
+      "artists": [
+        "Yoko Matsumoto Gazed at by Nature"
+      ],
+      "startDate": "2026-06-18",
+      "endDate": "2026-08-15",
+      "status": "upcoming",
+      "sourceUrl": "https://www.whitecube.com/gallery-exhibitions/yoko-matsumoto-seoul-2026",
+      "confidence": 0.9,
+      "sourceHash": "ed89bacd7b95798d3fe67884b0a88e2c349be86da95152e62a51bf825d174893",
+      "firstSeenAt": "2026-05-08T11:07:57.908Z",
+      "lastSeenAt": "2026-05-08T11:07:57.908Z",
+      "venue": {
+        "id": "venue-white-cube-seoul",
+        "name": "White Cube Seoul",
+        "slug": "white-cube-seoul",
+        "type": "gallery",
+        "authorityTier": "A",
+        "district": "강남",
+        "officialUrl": "https://www.whitecube.com",
+        "exhibitionUrl": "https://www.whitecube.com/locations/white-cube-seoul",
+        "crawlerKey": "white-cube",
+        "crawlerEnabled": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "name": "artcrawler",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "crawl": "tsx src/crawlers/run-crawler.ts",
+    "crawl:dry": "tsx src/crawlers/run-crawler.ts --dry-run",
+    "crawl:snapshot": "tsx src/crawlers/write-snapshot.ts",
+    "start": "next start",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "db:generate": "prisma generate"
+  },
+  "dependencies": {
+    "@prisma/adapter-pg": "7.8.0",
+    "@prisma/client": "7.8.0",
+    "cheerio": "1.2.0",
+    "lucide-react": "1.14.0",
+    "next": "16.2.4",
+    "pg": "8.20.0",
+    "playwright": "1.59.1",
+    "prisma": "7.8.0",
+    "react": "19.2.5",
+    "react-dom": "19.2.5",
+    "zod": "4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "25.6.0",
+    "@types/pg": "8.20.0",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "eslint": "9.39.4",
+    "eslint-config-next": "16.2.4",
+    "tsx": "4.21.0",
+    "typescript": "6.0.3",
+    "vitest": "4.1.5"
+  },
+  "overrides": {
+    "@hono/node-server": "1.19.13",
+    "postcss": "8.5.10"
+  }
+}
