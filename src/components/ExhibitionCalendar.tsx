@@ -5,10 +5,8 @@ import {
   ChevronLeft,
   ChevronRight,
   ExternalLink,
-  LocateFixed,
-  RefreshCw
+  LocateFixed
 } from "lucide-react";
-import { useRouter } from "next/navigation";
 import { useMemo, useState } from "react";
 import {
   addMonths,
@@ -69,14 +67,11 @@ export function ExhibitionCalendar({
   todayKey,
   datasetInfo
 }: ExhibitionCalendarProps) {
-  const router = useRouter();
   const [selectedDateKey, setSelectedDateKey] = useState(todayKey);
   const [currentMonth, setCurrentMonth] = useState(() => parseDateKey(todayKey));
   const [statusFilter, setStatusFilter] = useState<StatusFilter>("all");
   const [typeFilter, setTypeFilter] = useState<TypeFilter>("all");
   const [venueFilter, setVenueFilter] = useState<VenueFilter>("all");
-  const [isRefreshing, setIsRefreshing] = useState(false);
-  const [refreshError, setRefreshError] = useState<string | null>(null);
   const venueFilterOptions = useMemo(() => getVenueFilterOptions(exhibitions), [exhibitions]);
 
   const filteredExhibitions = useMemo(
@@ -123,29 +118,6 @@ export function ExhibitionCalendar({
     setCurrentMonth(parseDateKey(todayKey));
   }
 
-  async function refreshData() {
-    setIsRefreshing(true);
-    setRefreshError(null);
-
-    try {
-      const response = await fetch("/api/crawl/refresh", {
-        method: "POST"
-      });
-
-      if (!response.ok) {
-        const body = (await response.json().catch(() => null)) as { error?: string } | null;
-
-        throw new Error(body?.error ?? "자료를 새로 수집하지 못했습니다.");
-      }
-
-      router.refresh();
-    } catch (error) {
-      setRefreshError(error instanceof Error ? error.message : "자료를 새로 수집하지 못했습니다.");
-    } finally {
-      setIsRefreshing(false);
-    }
-  }
-
   return (
     <div className="calendar-shell">
       <header className="app-header">
@@ -155,16 +127,6 @@ export function ExhibitionCalendar({
           <p className="data-status">{formatDatasetInfo(datasetInfo, exhibitions.length)}</p>
         </div>
         <div className="header-actions">
-          <button
-            className="refresh-button"
-            disabled={isRefreshing}
-            onClick={refreshData}
-            title="자료 새로고침"
-            type="button"
-          >
-            <RefreshCw aria-hidden data-spinning={isRefreshing} size={16} />
-            {getRefreshButtonLabel(isRefreshing)}
-          </button>
           <div className="month-controls" aria-label="달력 이동">
             <button
               aria-label="이전 달"
@@ -191,8 +153,6 @@ export function ExhibitionCalendar({
           </div>
         </div>
       </header>
-
-      {refreshError ? <p className="refresh-error">{refreshError}</p> : null}
 
       <section className="coverage-strip" aria-label="수집 현황">
         <div>
@@ -455,8 +415,4 @@ function getVenueFilterOptions(exhibitions: ExhibitionWithVenue[]) {
         value: venue.id
       }))
   ];
-}
-
-function getRefreshButtonLabel(isRefreshing: boolean): string {
-  return isRefreshing ? "수집 중" : "자료 새로고침";
 }

@@ -107,8 +107,7 @@ h3 {
 }
 
 .icon-button,
-.today-button,
-.refresh-button {
+.today-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -144,40 +143,11 @@ h3 {
   line-height: 1.4;
 }
 
-.refresh-button {
-  gap: 7px;
-  border-radius: 999px;
-  padding: 0 14px;
-  color: var(--accent-strong);
-  font-weight: 800;
-}
-
-.refresh-button:disabled {
-  cursor: wait;
-  opacity: 0.68;
-}
-
-.refresh-button svg[data-spinning="true"] {
-  animation: spin 0.9s linear infinite;
-}
-
 .icon-button:hover,
 .today-button:hover,
-.refresh-button:hover:not(:disabled),
 .segmented-control button:hover {
   border-color: var(--line-strong);
   background: #ffffff;
-}
-
-.refresh-error {
-  margin: 14px 0 0;
-  border: 1px solid var(--warning-soft);
-  border-radius: 8px;
-  background: #fff7f0;
-  color: var(--warning);
-  padding: 10px 12px;
-  font-size: 14px;
-  font-weight: 700;
 }
 
 .coverage-strip {
@@ -633,8 +603,7 @@ h3 {
   }
 
   .header-actions,
-  .month-controls,
-  .refresh-button {
+  .month-controls {
     width: 100%;
   }
 
@@ -854,11 +823,5 @@ h3 {
     width: 20px;
     height: 20px;
     font-size: 10px;
-  }
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
   }
 }
