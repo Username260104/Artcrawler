@@ -330,8 +330,7 @@ export function ExhibitionCalendar({
                   </div>
                   <div className="meta-row">
                     <span>{typeLabels[exhibition.venue.type]}</span>
-                    <span>{exhibition.venue.authorityTier}등급 권위</span>
-                    <span>신뢰도 {Math.round(exhibition.confidence * 100)}%</span>
+                    <span>{exhibition.venue.authorityTier}</span>
                   </div>
                   <h3>{exhibition.title}</h3>
                   <p className="artist-line">{exhibition.artists.join(", ")}</p>
