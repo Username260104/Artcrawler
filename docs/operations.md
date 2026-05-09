@@ -20,11 +20,11 @@ Vercel 배포 기준으로 하루 1회 `/api/cron/crawl`이 호출된다.
 ```json
 {
   "path": "/api/cron/crawl",
-  "schedule": "0 18 * * *"
+  "schedule": "0 3 * * *"
 }
 ```
 
-Vercel cron은 UTC 기준이다. `0 18 * * *`는 한국 시간 기준 매일 새벽 3시다.
+Vercel cron은 UTC 기준이다. `0 3 * * *`는 한국 시간 기준 매일 정오 12시다.
 
 ## 필요한 환경 변수
 
